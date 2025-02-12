@@ -14,7 +14,6 @@ source:
       - patches/0002-fix-libdgl-sparse-pytorch-location-logic.patch
       - patches/0003-control-make-parallelism.patch
       - patches/0004-Use-system-liburing.patch                          # [linux]
-      - patches/0005-Don-t-add-post-version-to-graphbolt-lib.patch
 
   - folder: third_party/cccl
     git_url: https://github.com/NVIDIA/cccl.git
