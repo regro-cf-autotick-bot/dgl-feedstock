@@ -1,4 +1,4 @@
-From 9eeb428beb8715978a8ac0d6382824888c7578bd Mon Sep 17 00:00:00 2001
+From 948b32c13781437bd62334f87163688b73c5ff04 Mon Sep 17 00:00:00 2001
 From: jaimergp <jaimergp@users.noreply.github.com>
 Date: Mon, 12 Feb 2024 10:28:16 +0100
 Subject: [PATCH 3/5] control make parallelism
@@ -32,10 +32,10 @@ index f8b46703..e4b8b80d 100644
  		cd ..
  	done
 diff --git a/graphbolt/build.sh b/graphbolt/build.sh
-index dc925525..a0e5aa92 100755
+index 7c71f755..65299901 100755
 --- a/graphbolt/build.sh
 +++ b/graphbolt/build.sh
-@@ -33,7 +33,7 @@ echo $CMAKE_FLAGS
+@@ -33,7 +33,7 @@ echo "graphbolt cmake flags: $CMAKE_FLAGS"
  
  if [ $# -eq 0 ]; then
    $CMAKE_COMMAND $CMAKE_FLAGS ..
