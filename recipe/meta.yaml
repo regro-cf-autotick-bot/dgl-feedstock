@@ -10,11 +10,11 @@ source:
   - url: https://github.com/dmlc/dgl/archive/v{{ version }}.tar.gz
     sha256: 6372d0c804b52940f2a4d0f9b9d83c422ec5ef933907b2805da08b409f8ed26c
     patches:
-      - fix_clang_errors.patch
-      - fix_libdgl_sparse_pytorch_location_logic.patch
-      - control_make_parallelism.patch
-      - use-system-liburing.patch  # [linux]
-      - pytorch-version-post.patch
+      - patches/0001-fix-clang-errors.patch
+      - patches/0002-fix-libdgl-sparse-pytorch-location-logic.patch
+      - patches/0003-control-make-parallelism.patch
+      - patches/0004-Use-system-liburing.patch                          # [linux]
+      - patches/0005-Don-t-add-post-version-to-graphbolt-lib.patch
 
   - url: https://github.com/google/googletest/archive/f8d7d77c06936315286eb55f8de22cd23c188571.tar.gz
     sha256: 7ff5db23de232a39cbb5c9f5143c355885e30ac596161a6b9fc50c4538bfbf01
