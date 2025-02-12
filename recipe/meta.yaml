@@ -28,7 +28,7 @@ source:
     git_rev: f8d7d77c06936315286eb55f8de22cd23c188571
 
   - folder: third_party/libxsmm
-    git_url: https://github.com/hfp/libxsmm.git
+    git_url: https://github.com/libxsmm/libxsmm.git
     git_rev: 80090603e43f6ddc870cc42e1403dd0af07744cc
 
   - folder: third_party/pcg
