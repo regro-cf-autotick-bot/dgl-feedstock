@@ -16,25 +16,25 @@ source:
       - patches/0004-Use-system-liburing.patch                          # [linux]
       - patches/0005-Don-t-add-post-version-to-graphbolt-lib.patch
 
-  - url: https://github.com/google/googletest/archive/f8d7d77c06936315286eb55f8de22cd23c188571.tar.gz
-    sha256: 7ff5db23de232a39cbb5c9f5143c355885e30ac596161a6b9fc50c4538bfbf01
-    folder: third_party/googletest
+  - folder: third_party/googletest
+    git_url: https://github.com/google/googletest.git
+    git_rev: f8d7d77c06936315286eb55f8de22cd23c188571
 
-  - url: https://github.com/hfp/libxsmm/archive/80090603e43f6ddc870cc42e1403dd0af07744cc.tar.gz
-    sha256: 5ee733ccbfe8b79f61e4ea87e5defbbaf51f80a851eb3cf00a0946e4d230d999
-    folder: third_party/libxsmm
+  - folder: third_party/libxsmm
+    git_url: https://github.com/hfp/libxsmm.git
+    git_rev: 80090603e43f6ddc870cc42e1403dd0af07744cc
 
-  - url: https://github.com/imneme/pcg-cpp/archive/428802d1a5634f96bcd0705fab379ff0113bcf13.tar.gz
-    sha256: 79f23706ed0cbc1bb57ea35d50d0abed66898b8f7b0bcf2aaecdfd234863b060
-    folder: third_party/pcg
+  - folder: third_party/pcg
+    git_url: https://github.com/imneme/pcg-cpp.git
+    git_rev: 428802d1a5634f96bcd0705fab379ff0113bcf13
 
-  - url: https://github.com/NVIDIA/cccl/archive/69be18c0232c9dddaae6c715aa9ed1b61bfb10be.tar.gz
-    sha256: 5982c4428359f846da377ccaefc4c463603a3f73425546215dbf28b5205e9dbf
-    folder: third_party/cccl
+  - folder: third_party/cccl
+    git_url: https://github.com/NVIDIA/cccl.git
+    git_rev: 69be18c0232c9dddaae6c715aa9ed1b61bfb10be
 
-  - url: https://github.com/NVIDIA/cuCollections/archive/6c0d7ee190a167c6976af0f7c628a43d13b78f38.tar.gz
-    sha256: e80333f21aa1a046d35a60978cd4927c83fbf27d8d349d0dc58f8d4b19d7443c
-    folder: third_party/cuco
+  - folder: third_party/cuco
+    git_url: https://github.com/NVIDIA/cuCollections.git
+    git_rev: 6c0d7ee190a167c6976af0f7c628a43d13b78f38
 
 build:
   skip: true  # [win or py<39]
